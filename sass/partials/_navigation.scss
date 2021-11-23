@@ -1,0 +1,28 @@
+.navigation {
+
+    &-menu {
+        transition: ease-in-out .5s;
+    }
+
+    &-button {
+
+        &.active {
+            
+            span {
+                background-color: white;
+            }
+        }
+
+        span {
+            transition: ease-in-out .3s;
+        }
+    
+        &:hover {
+    
+            span:nth-of-type(3) {
+                width: 25px;
+            }
+        }
+    }
+}
+

@@ -1,7 +1,9 @@
+import { BaseLayout } from '../layouts'
+
 export default function Home() {
   return (
-    <div className="">
-
-    </div>
+    <BaseLayout>
+    
+    </BaseLayout>
   )
 }
