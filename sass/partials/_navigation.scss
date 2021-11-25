@@ -2,6 +2,22 @@
 
     &-menu {
         transition: ease-in-out .5s;
+
+        &-icon {
+
+            svg {
+                width: 25px;
+                height: 25px;
+
+                path:nth-of-type(2) {
+                    fill: white;
+                }
+            }
+
+            &:hover {
+                opacity: .5;
+            }
+        }
     }
 
     &-button {

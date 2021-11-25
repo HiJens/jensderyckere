@@ -3,6 +3,9 @@ import { useState } from "react"
 // Next
 import Link from "next/link"
 
+// Components
+import { Behance, Github, Instagram, Linkedin } from "../components";
+
 export default function Navigation() {
     const [ showMenu, setShowMenu ] = useState(false);
 
@@ -29,8 +32,22 @@ export default function Navigation() {
                     </Link>
                 </div>
 
-                <div className="navigation-menu-socials">
-                    
+                <div className="navigation-menu-socials mt-8 flex justify-end items-center">
+                    <a href="https://github.com/HiJens" target="_blank" className="navigation-menu-icon mr-3">
+                        <Github />
+                    </a>
+
+                    <a href="https://www.behance.net/jensdery?tracking_source=search_projects_published_date" target="_blank" className="navigation-menu-icon mr-3">
+                        <Behance />
+                    </a>
+
+                    <a href="https://www.instagram.com/jensderyckere/" target="_blank" className="navigation-menu-icon mr-3">
+                        <Instagram />
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/jens-deryckere/" target="_blank" className="navigation-menu-icon">
+                        <Linkedin />
+                    </a>
                 </div>
             </div>
         </div>
