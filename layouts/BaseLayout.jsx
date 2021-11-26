@@ -5,7 +5,7 @@ export default function BaseLayout({ children }) {
         <div className="base-layout">
             <Header />
 
-            <main>
+            <main className="pt-32">
                 {children}
             </main>
         </div>

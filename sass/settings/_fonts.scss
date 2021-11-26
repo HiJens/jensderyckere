@@ -16,3 +16,18 @@ p,
 span {
     color: $black;
 }
+
+.title {
+
+    &-line {
+        position: relative;
+
+        svg {
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+}
