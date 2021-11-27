@@ -10,14 +10,14 @@ import { LineOne, LineTwo } from "../../components";
 export default function Hero() {
     return (
         <section className="hero hero--home lg:flex items-center py-12">
-            <div className="container px-6 sm:px-10 md:px-24 lg:mx-auto">
+            <div className="container px-6 sm:px-10 md:px-16 lg:mx-auto">
                 <div className="grid lg:grid-cols-2 grid-cols-1">
                     <div className="hero-content md:pr-32">
                         <span className="hero-content-tagline text-black relative text-xs uppercase font-semibold tracking-widest">
                             Jens Deryckere
                         </span>
 
-                        <h2 className="hero-content-title text-black font-medium text-lg mt-2 mb-6">
+                        <h2 className="hero-content-title text-black font-medium text-lg md:text-xl mt-2 mb-6">
                             I deliver <span className="title-line title-line--v1">user-oriented <LineOne /></span> and <span className="title-line title-line--v2">optimized <LineTwo /></span> digital products
                         </h2>
 
