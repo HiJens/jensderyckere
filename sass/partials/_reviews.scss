@@ -1,0 +1,13 @@
+.reviews {
+
+    &-button {
+        box-shadow: 0px 24px 48px -12px rgba(0, 0, 0, 0.3);
+        
+        &--right {
+
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

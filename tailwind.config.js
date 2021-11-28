@@ -9,7 +9,9 @@ module.exports = {
     colors: {
       'blue': '#3F80FF',
       'black': '#0F0F0F',
-      'white': "#FFFFFF"
+      'white': "#FFFFFF",
+      'lightgrey': '#F9FAFB',
+      'grey': '#939393'
     },
     fontSize: {
       'xl': '40px',

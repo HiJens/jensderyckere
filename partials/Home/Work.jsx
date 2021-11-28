@@ -24,7 +24,7 @@ export default function Work() {
             image: Accter,
             title: "Accter",
             tags: ["webdevelopment", "uxdesign"],
-            description: "ACCTER automates and simplifies all your corporate planning and consolidation processes. Our goal is to transform the traditional consolidation, forecasting and budgeting cycles into value adding business processes and streamline your financial close.",
+            description: "ACCTER automates and simplifies all your corporate planning and consolidation processes. Their goal is to transform the traditional consolidation, forecasting and budgeting cycles into value adding business processes and streamline your financial close.",
             slug: "accter"
         },
         {
@@ -44,18 +44,18 @@ export default function Work() {
     ];
 
     return (
-        <section className="work py-20">
+        <section className="work mt-20 mb-10">
             <div className="container px-6 sm:px-10 md:px-16 lg:mx-auto">
-                <h3 className="title font-medium text-black text-md md:text-lg">
+                <h3 className="title font-medium text-black text-lg" data-aos="fade-right">
                     Some <span className="title-line title-line--v3">work <LineThree /></span>
                 </h3>
 
-                <div className="grid lg:grid-cols-2 grid-cols-1 gap-9 mt-20">
-                    <div className="work-left lg:mt-20">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-16 mt-20">
+                    <div className="work-left">
                         {
                             workContent && workContent.map((item, index) => {
                                 return index % 2 === 0 &&  (
-                                    <div className="work-item mb-20">
+                                    <div className="work-item mb-20" data-aos="fade-right">
                                         <div className="work-item-img relative w-full">
                                             <Image 
                                                 src={item.image}
@@ -66,7 +66,7 @@ export default function Work() {
                                         </div>
 
                                         <div className="work-item-content mt-7">
-                                            <h4 className="title text-md text-black font-semibold">
+                                            <h4 className="title text-md text-black font-bold">
                                                 {item.title}
                                             </h4>
 
@@ -74,7 +74,7 @@ export default function Work() {
                                                 {
                                                     item.tags.map((tag) => {
                                                         return (
-                                                            <span className="tags-item mr-2 my-1 opacity-50 font-medium uppercase text-xs">
+                                                            <span className="tags-item mr-2 my-1 opacity-50 font-semibold uppercase text-xs">
                                                                 #{tag}
                                                             </span>
                                                         )
@@ -87,7 +87,7 @@ export default function Work() {
                                             </p>
 
                                             <Link passHref href={`/work/${item.slug}`}>
-                                                <a className="text-blue text-xs font-semibold uppercase underline">
+                                                <a className="text-blue text-xs font-semibold uppercase underline tracking-widest">
                                                     Find out more
                                                 </a>
                                             </Link>
@@ -102,7 +102,7 @@ export default function Work() {
                         {
                             workContent && workContent.map((item, index) => {
                                 return index % 2 !== 0 &&  (
-                                    <div className="work-item mb-20">
+                                    <div className="work-item mb-20" data-aos="fade-left">
                                         <div className="work-item-img relative w-full">
                                             <Image 
                                                 src={item.image}
@@ -113,7 +113,7 @@ export default function Work() {
                                         </div>
 
                                         <div className="work-item-content mt-7">
-                                            <h4 className="title text-md text-black font-semibold">
+                                            <h4 className="title text-md text-black font-bold">
                                                 {item.title}
                                             </h4>
 
@@ -121,7 +121,7 @@ export default function Work() {
                                                 {
                                                     item.tags.map((tag) => {
                                                         return (
-                                                            <span className="tags-item mr-2 my-1 opacity-50 font-medium uppercase text-xs">
+                                                            <span className="tags-item mr-2 my-1 opacity-50 font-semibold uppercase text-xs">
                                                                 #{tag}
                                                             </span>
                                                         )
@@ -134,7 +134,7 @@ export default function Work() {
                                             </p>
 
                                             <Link passHref href={`/work/${item.slug}`}>
-                                                <a className="text-blue text-xs font-semibold uppercase underline">
+                                                <a className="text-blue text-xs font-semibold uppercase underline tracking-widest">
                                                     Find out more
                                                 </a>
                                             </Link>
