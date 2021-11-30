@@ -1,0 +1,14 @@
+.footer {
+
+    &-socials {
+
+        svg {
+            width: 20px;
+            height: 20px;
+            
+            path:nth-of-type(2) {
+                fill: $black;
+            }
+        }
+    }
+}

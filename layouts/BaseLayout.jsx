@@ -1,4 +1,4 @@
-import { Header } from "../partials";
+import { Footer, Header } from "../partials";
 
 export default function BaseLayout({ children }) {
     return (
@@ -8,6 +8,8 @@ export default function BaseLayout({ children }) {
             <main className="pt-28">
                 {children}
             </main>
+
+            <Footer />
         </div>
     )
 };

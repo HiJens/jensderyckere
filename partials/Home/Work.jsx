@@ -18,7 +18,7 @@ export default function Work() {
             title: "RouteZ",
             tags: ["softwaredevelopment", "servicedesign"],
             description: "RouteZ is a digital learning platform created by teachers and for teachers. With the help of the community, teachers can polish themselves and raise themselves to a higher level.",
-            slug: "route-z"
+            slug: "routez"
         },
         {
             image: Accter,
