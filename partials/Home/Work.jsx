@@ -51,11 +51,10 @@ export default function Work() {
                 </h3>
 
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-16 mt-20">
-                    <div className="work-left">
                         {
                             workContent && workContent.map((item, index) => {
-                                return index % 2 === 0 &&  (
-                                    <div className="work-item mb-20" data-aos="fade-right">
+                                return (
+                                    <div className="work-item mb-10" data-aos={index % 2 ? "fade-left" : "fade-right"}>
                                         <div className="work-item-img relative w-full">
                                             <Image 
                                                 src={item.image}
@@ -96,54 +95,6 @@ export default function Work() {
                                 )
                             })
                         }
-                    </div>
-
-                    <div className="work-right">
-                        {
-                            workContent && workContent.map((item, index) => {
-                                return index % 2 !== 0 &&  (
-                                    <div className="work-item mb-20" data-aos="fade-left">
-                                        <div className="work-item-img relative w-full">
-                                            <Image 
-                                                src={item.image}
-                                                layout="fill"
-                                                objectFit="cover"
-                                                objectPosition="center"
-                                            />
-                                        </div>
-
-                                        <div className="work-item-content mt-7">
-                                            <h4 className="title text-md text-black font-bold">
-                                                {item.title}
-                                            </h4>
-
-                                            <div className="tags flex flex-wrap">
-                                                {
-                                                    item.tags.map((tag) => {
-                                                        return (
-                                                            <span className="tags-item mr-2 my-1 opacity-50 font-semibold uppercase text-xs">
-                                                                #{tag}
-                                                            </span>
-                                                        )
-                                                    })
-                                                }
-                                            </div>
-
-                                            <p className="text text-black font-light text-sm my-3">
-                                                {item.description}
-                                            </p>
-
-                                            <Link passHref href={`/work/${item.slug}`}>
-                                                <a className="text-blue text-xs font-semibold uppercase underline tracking-widest">
-                                                    Find out more
-                                                </a>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
                 </div>
             </div>
         </section>
