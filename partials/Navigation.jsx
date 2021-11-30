@@ -16,14 +16,8 @@ export default function Navigation() {
         setIfHome(pathname === "/");
     });
 
-    const goTo = (id) => {
-        if (id === "home") {
-            window.scrollTo({top: 0});
-        } else {
-            const el = document.querySelector(id).getBoundingClientRect().top;
-            window.scrollTo({top: el - 200});
-        }
-
+    const goTo = (top) => {
+        window.scrollTo({top: top});
         setShowMenu(false);
     };
 
@@ -40,15 +34,15 @@ export default function Navigation() {
                     {
                         ifHome ? (
                             <>
-                                <span onClick={() => goTo("home")} className="text-lg font-semibold text-white mb-8 cursor-pointer">
+                                <span onClick={() => goTo(0)} className="text-lg font-semibold text-white mb-8 cursor-pointer">
                                     Home
                                 </span>
 
-                                <span onClick={() => goTo("#work")} className="text-lg font-semibold text-white mb-8 cursor-pointer">
+                                <span onClick={() => goTo(document.querySelector("#work").getBoundingClientRect().top + window.scrollY - 200)} className="text-lg font-semibold text-white mb-8 cursor-pointer">
                                     Work
                                 </span>
 
-                                <span onClick={() => goTo("#contact")} className="text-lg font-semibold text-white mb-8 cursor-pointer">
+                                <span onClick={() => goTo(document.querySelector("#contact").getBoundingClientRect().top + window.scrollY - 200)} className="text-lg font-semibold text-white mb-8 cursor-pointer">
                                     Contact
                                 </span>
                             </>
