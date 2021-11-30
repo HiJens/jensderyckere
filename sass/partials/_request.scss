@@ -1,0 +1,21 @@
+.request {
+
+    .link {
+
+        &-arrow {
+            transform: rotate(180deg);
+            transition: ease-in-out .3s;
+            
+            path {
+                stroke: $blue;
+            }
+        }
+
+        &:hover {
+
+            .link-arrow {
+                transform: rotate(180deg) translateX(-5px);
+            }
+        }
+    }
+}

@@ -44,7 +44,7 @@ export default function Work() {
     ];
 
     return (
-        <section className="work mt-20 mb-10">
+        <section className="work my-20" id="work">
             <div className="container px-6 sm:px-10 md:px-16 lg:mx-auto">
                 <h3 className="title font-medium text-black text-lg" data-aos="fade-right">
                     Some <span className="title-line title-line--v3">work <LineThree /></span>
@@ -54,7 +54,7 @@ export default function Work() {
                         {
                             workContent && workContent.map((item, index) => {
                                 return (
-                                    <div className="work-item mb-10" data-aos={index % 2 ? "fade-left" : "fade-right"}>
+                                    <div key={index} className="work-item mb-10" data-aos={index % 2 ? "fade-left" : "fade-right"}>
                                         <div className="work-item-img relative w-full">
                                             <Image 
                                                 src={item.image}
@@ -71,9 +71,9 @@ export default function Work() {
 
                                             <div className="tags flex flex-wrap">
                                                 {
-                                                    item.tags.map((tag) => {
+                                                    item.tags.map((tag, innerIndex) => {
                                                         return (
-                                                            <span className="tags-item mr-2 my-1 opacity-50 font-semibold uppercase text-xs">
+                                                            <span key={innerIndex} className="tags-item mr-2 my-1 opacity-50 font-semibold uppercase text-xs">
                                                                 #{tag}
                                                             </span>
                                                         )

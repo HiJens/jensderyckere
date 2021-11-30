@@ -5,6 +5,7 @@ import Github from "./Github";
 import LineOne from "./LineOne";
 import LineTwo from "./LineTwo";
 import LineThree from "./LineThree";
+import LineFour from "./LineFour";
 
 export {
     Behance,
@@ -13,5 +14,6 @@ export {
     Github,
     LineOne,
     LineTwo,
-    LineThree
+    LineThree,
+    LineFour
 };
