@@ -4,7 +4,7 @@ import { Footer, Header } from "../partials";
 // Next
 import Head from "next/head";
 
-export default function BaseLayout({ children, title, description }) {
+export default function BaseLayout({ children, title }) {
     return (
         <div className="base-layout">
             <Head>
