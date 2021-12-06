@@ -7,10 +7,12 @@ export default function Banner({ image }) {
                 <path d="M1149 497L0 0V497H1149Z" fill="#3F80FF"/>
             </svg>
 
-            <Image 
-                src={image}
-                objectFit="cover"
-            />
+            <div data-aos="fade-up">
+                <Image 
+                    src={image}
+                    objectFit="cover"
+                />
+            </div>
         </section>
     )
 };

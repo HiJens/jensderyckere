@@ -4,7 +4,7 @@ export default function Text({ title, columns }) {
             <div className="container py-20 px-6 sm:px-10 md:px-16 lg:mx-auto">
                 {
                     title && (
-                        <h2 className="text-title text-black font-semibold text-md">
+                        <h2 className="text-title text-black font-semibold text-md" data-aos="fade-up">
                             {title}
                         </h2>
                     )
@@ -14,7 +14,7 @@ export default function Text({ title, columns }) {
                     {
                         columns.map((column, i) => {
                             return (
-                                <div className="lg:col-span-6 col-span-full" key={i}>
+                                <div className="lg:col-span-6 col-span-full" data-aos="fade-up" data-aos-delay={i * 250} key={i}>
                                     <p className="text-sm text-black font-light mb-0">
                                         {column}
                                     </p>

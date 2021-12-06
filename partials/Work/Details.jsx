@@ -6,7 +6,7 @@ export default function Details({ columns }) {
                     {
                         columns && columns.map((column, index) => {
                             return (
-                                <div className="details-column flex mr-16 mb-4" key={index}>
+                                <div className="details-column flex mr-16 mb-4" data-aos="fade-up" data-aos-delay={index * 250} key={index}>
                                     <span className="label w-16 text-sm text-grey font-semibold tracking-widest uppercase mr-4">{column.title}</span>
                                     <span className="value text-sm text-black font-light">
                                         {
