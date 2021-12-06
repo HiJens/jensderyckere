@@ -2,10 +2,11 @@
 import { BaseLayout } from "../../layouts";
 
 // Partials
-import { Hero, Details, Text, Quote } from "../../partials/Work";
+import { Hero, Details, Text, Quote, Banner } from "../../partials/Work";
 
 // Images
 import HeroImage from "../../public/assets/images/abloc.jpeg";
+import MockImage from "../../public/assets/images/abloc-mock.png";
 
 export default function Abloc() {
     return (
@@ -52,6 +53,10 @@ export default function Abloc() {
             <Quote
                 title="It was a pleasure to work with u"
                 name="Arnaud Deleu"
+            />
+
+            <Banner 
+                image={MockImage}
             />
         </BaseLayout>
     )

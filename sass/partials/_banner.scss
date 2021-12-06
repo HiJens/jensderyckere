@@ -1,0 +1,13 @@
+.banner {
+    background: linear-gradient(93.58deg, #3F80FF 0%, #00B0D7 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        position: absolute;
+        height: 100%;
+    }
+}
