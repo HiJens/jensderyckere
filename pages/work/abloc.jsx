@@ -2,7 +2,7 @@
 import { BaseLayout } from "../../layouts";
 
 // Partials
-import { Hero, Details, Text, Quote, Banner } from "../../partials/Work";
+import { Hero, Details, Text, Quote, Banner, Visit } from "../../partials/Work";
 
 // Images
 import HeroImage from "../../public/assets/images/abloc.jpeg";
@@ -57,6 +57,10 @@ export default function Abloc() {
 
             <Banner 
                 image={MockImage}
+            />
+
+            <Visit 
+                url="www.abloccoaching.cc"
             />
         </BaseLayout>
     )
