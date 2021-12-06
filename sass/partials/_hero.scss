@@ -2,6 +2,10 @@
     position: relative;
     min-height: 700px;
 
+    &--work {
+        min-height: 600px;
+    }
+
     &-title {
         position: relative;
         text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.85);
