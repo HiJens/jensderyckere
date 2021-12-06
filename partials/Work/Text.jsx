@@ -1,5 +1,4 @@
 export default function Text({ title, columns }) {
-    console.log(columns)
     return (
         <section className="text">
             <div className="container py-12 px-6 sm:px-10 md:px-16 lg:mx-auto">
