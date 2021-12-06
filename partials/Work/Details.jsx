@@ -1,7 +1,7 @@
 export default function Details({ columns }) {
     return (
         <section className="details">
-            <div className="container py-12 px-6 sm:px-10 md:px-16 lg:mx-auto">
+            <div className="container pt-12 pb-6 px-6 sm:px-10 md:px-16 lg:mx-auto">
                 <div className="flex flex-wrap">
                     {
                         columns && columns.map((column, index) => {
