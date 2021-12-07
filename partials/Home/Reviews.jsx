@@ -1,5 +1,12 @@
 import { useState } from "react";
 
+// Images
+import Arnaud from "../../public/assets/images/arnaud.jpeg";
+import Hans from "../../public/assets/images/hans.jpeg";
+
+// Next.js
+import Image from "next/image";
+
 export default function Reviews() {
     const [ activeIndex, setActiveIndex ] = useState(0);
 
@@ -7,32 +14,22 @@ export default function Reviews() {
     const reviewsContent = [
         {
             quote: "Dit is een test van een zeer goede quote",
-            name: "Isabelle De Nil",
-            role: "Founder",
-            avatar: "",
-            firm: {
-                title: "Hi! Innovation",
-                url: "www.hinnovation.be"
-            }
-        },
-        {
-            quote: "Dit is een test van een zeer goede quote",
             name: "Arnaud Deleu",
             role: "Founder",
-            avatar: "",
+            avatar: Arnaud,
             firm: {
                 title: "A'Bloc Coaching",
-                url: "www.abloccoaching.cc"
+                url: "https://www.abloccoaching.cc"
             }
         },
         {
             quote: "Dit is een test van een zeer goede quote",
             name: "Hans Vertriest",
             role: "Fullstack Developer",
-            avatar: "",
+            avatar: Hans,
             firm: {
                 title: "Bizzy",
-                url: "www.bizzy.eu"
+                url: "https://www.bizzy.org/nl"
             }
         },
     ];
@@ -62,8 +59,12 @@ export default function Reviews() {
                                     {item.quote}
                                 </h2>
 
-                                <div className="reviews-item-avatar w-20 h-20 rounded-full flex bg-grey mt-6 mb-4">
-
+                                <div className="reviews-item-avatar w-20 h-20 relative overflow-hidden rounded-full flex bg-grey mt-6 mb-4">
+                                    <Image 
+                                        src={item.avatar}
+                                        layout="fill"
+                                        objectFit="cover"
+                                    />
                                 </div>
 
                                 <span className="reviews-item-name text-center text-md text-black font-normal">

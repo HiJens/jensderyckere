@@ -8,7 +8,7 @@ export default function Images({ images }) {
                     {
                         images.map((img, i) => {
                             return (
-                                <div className="image-wrapper col-span-full md:col-span-1 h-96 w-full relative" key={i}>
+                                <div className="image-wrapper col-span-full md:col-span-1 h-96 w-full relative" key={i} data-aos="fade-up">
                                     <Image
                                         src={img} 
                                         layout="fill"
