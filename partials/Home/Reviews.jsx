@@ -23,7 +23,7 @@ export default function Reviews() {
             }
         },
         {
-            quote: "Dit is een test van een zeer goede quote",
+            quote: "Een project in samenwerking met Jens is een project waar je kan rekenen op een vlotte samenwerking en communicatie.",
             name: "Hans Vertriest",
             role: "Fullstack Developer",
             avatar: Hans,
