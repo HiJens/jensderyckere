@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function TextImage({ title, text, image, buttons }) {
     return (
         <section className="text-image">
-            <div className="container md:py-20 py-10 px-6 sm:px-10 md:px-16 lg:mx-auto">
+            <div className="container md:py-14 py-10 px-6 sm:px-10 md:px-16 lg:mx-auto">
                 <div className="grid grid-cols-2 gap-10 md:gap-20 items-center">
                     {
                         image && (

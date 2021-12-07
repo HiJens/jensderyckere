@@ -2,11 +2,13 @@
 import { BaseLayout } from "../../layouts";
 
 // Partials
-import { Hero, Details, Text, Quote, Banner, Visit } from "../../partials/Work";
+import { Hero, Details, Text, Quote, Visit, Images } from "../../partials/Work";
 
 // Images
 import HeroImage from "../../public/assets/images/abloc.jpeg";
-import MockImage from "../../public/assets/images/abloc-mock.png";
+import Mock1Image from "../../public/assets/images/abloc/mock.png";
+import Mock2Image from "../../public/assets/images/abloc/mock-1.png";
+import Mock3Image from "../../public/assets/images/abloc/mock-2.png";
 
 export default function Abloc() {
     return (
@@ -14,6 +16,7 @@ export default function Abloc() {
             <Hero 
                 title="A'Bloc Coaching"
                 image={HeroImage}
+                position="50% 20%"
             />
 
             <Details 
@@ -55,8 +58,12 @@ export default function Abloc() {
                 name="Arnaud Deleu"
             />
 
-            <Banner 
-                image={MockImage}
+            <Images 
+                images={[
+                    Mock1Image,
+                    Mock3Image,
+                    Mock2Image
+                ]}
             />
 
             <Visit 
