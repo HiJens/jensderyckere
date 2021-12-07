@@ -23,28 +23,28 @@ export default function Navigation() {
 
     return (
         <div className="navigation">
-            <div className={`navigation-button relative z-10 cursor-pointer flex flex-col items-end${showMenu ? ' active': ''}`} onClick={() => setShowMenu(!showMenu)}>
+            <a href="javascript:;" className={`navigation-button relative z-10 cursor-pointer flex flex-col items-end${showMenu ? ' active': ''}`} onClick={() => setShowMenu(!showMenu)}>
                 <span className="flex w-8 h-0.5 bg-black"></span>
                 <span className="flex w-8 my-1.5 h-0.5 bg-black"></span>
                 <span className="flex w-8 h-0.5 bg-black"></span>
-            </div>
+            </a>
 
             <div className={`navigation-menu fixed ${!showMenu ? '-right-full': 'right-0'} top-0 w-full md:w-6/12 lg:w-3/12 h-screen bg-black py-36 sm:px-8 md:px-14 lg:px-24 z-0`}>
                 <div className="navigation-menu-links flex flex-col items-center md:items-end">
                     {
                         ifHome ? (
                             <>
-                                <span onClick={() => goTo(0)} className="text-lg font-semibold text-white mb-8 cursor-pointer">
+                                <a href="javascript:;" onClick={() => goTo(0)} className="text-lg font-semibold text-white mb-8 cursor-pointer">
                                     Home
-                                </span>
+                                </a>
 
-                                <span onClick={() => goTo(document.querySelector("#work").getBoundingClientRect().top + window.scrollY - 200)} className="text-lg font-semibold text-white mb-8 cursor-pointer">
+                                <a href="javascript:;" onClick={() => goTo(document.querySelector("#work").getBoundingClientRect().top + window.scrollY - 200)} className="text-lg font-semibold text-white mb-8 cursor-pointer">
                                     Work
-                                </span>
+                                </a>
 
-                                <span onClick={() => goTo(document.querySelector("#contact").getBoundingClientRect().top + window.scrollY - 200)} className="text-lg font-semibold text-white mb-8 cursor-pointer">
+                                <a href="javascript:;" onClick={() => goTo(document.querySelector("#contact").getBoundingClientRect().top + window.scrollY - 200)} className="text-lg font-semibold text-white mb-8 cursor-pointer">
                                     Contact
-                                </span>
+                                </a>
                             </>
                         ) : (
                             <>

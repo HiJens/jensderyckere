@@ -9,7 +9,9 @@
     "aos": "^2.3.4",
     "next": "latest",
     "react": "^17.0.2",
+    "react-animated-cursor": "^2.2.0",
     "react-dom": "^17.0.2",
+    "react-parallax": "^3.3.0",
     "react-player": "^2.9.0",
     "sass": "^1.43.5"
   },

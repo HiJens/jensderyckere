@@ -57,7 +57,7 @@ export default function Work() {
                                         </div>
 
                                         <div className="work-item-content mt-7">
-                                            <h4 className="title text-md text-black font-semibold">
+                                            <h4 className="title text-md mb-2 text-black font-semibold">
                                                 {item.title}
                                             </h4>
 
@@ -65,7 +65,7 @@ export default function Work() {
                                                 {
                                                     item.tags.map((tag, innerIndex) => {
                                                         return (
-                                                            <span key={innerIndex} className="tags-item mr-2 my-1 opacity-50 font-semibold uppercase text-xs">
+                                                            <span key={innerIndex} className="tags-item mr-2 opacity-50 font-semibold uppercase text-xs">
                                                                 #{tag}
                                                             </span>
                                                         )

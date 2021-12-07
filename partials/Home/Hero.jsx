@@ -7,6 +7,9 @@ import Image from "next/image";
 // Components
 import { LineOne, LineTwo } from "../../components";
 
+// Packages
+import { Parallax } from 'react-parallax';
+
 export default function Hero() {
     return (
         <section className="hero hero--home lg:flex items-center py-20">
