@@ -63,17 +63,11 @@ export default function Footer() {
                                         <Link href="/work/routez" passHref>
                                             <a className="flex mb-2 text-black font-medium text-sm hover:underline">RouteZ</a>
                                         </Link>
-                                        <Link href="/work/accter" passHref>
-                                            <a className="flex mb-2 text-black font-medium text-sm hover:underline">Accter</a>
-                                        </Link>
                                         <Link href="/work/abloc" passHref>
                                             <a className="flex mb-2 text-black font-medium text-sm hover:underline">A'Bloc Coaching</a>
                                         </Link>
-                                    </div>
-
-                                    <div className="footer-nav-split-item md:ml-10">
-                                        <Link href="/work/duckaway" passHref>
-                                            <a className="text-black font-medium text-sm hover:underline">DuckAway</a>
+                                        <Link href="/work/enjoyjobs" passHref>
+                                            <a className="text-black font-medium text-sm hover:underline">Enjoy Jobs</a>
                                         </Link>
                                     </div>
                                 </div>

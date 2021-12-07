@@ -42,7 +42,7 @@ export default function Reviews() {
     };
 
     return (
-        <section className="reviews bg-lightgrey my-20" id="reviews">
+        <section className="reviews bg-lightgrey md:my-36 my-20" id="reviews">
             <div className="container px-6 sm:px-10 md:px-16 py-14 lg:mx-auto relative">
                 {
                     activeIndex !== 0 && (

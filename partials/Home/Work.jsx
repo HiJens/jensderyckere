@@ -6,10 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Images
-import RouteZ from "../../public/assets/images/routez.png";
-import Abloc from "../../public/assets/images/abloc.jpeg";
-import Accter from "../../public/assets/images/accter.png";
-import Duckaway from "../../public/assets/images/duckaway.png";
+import RouteZ from "../../public/assets/images/routez/thumbnail.png";
+import Abloc from "../../public/assets/images/abloc/thumbnail.png";
+import EnjoyJobs from "../../public/assets/images/enjoyjobs/thumbnail.png";
 
 export default function Work() {
     const workContent = [
@@ -21,18 +20,11 @@ export default function Work() {
             slug: "routez"
         },
         {
-            image: Accter,
-            title: "Accter",
+            image: EnjoyJobs,
+            title: "Enjoy Jobs",
             tags: ["webdevelopment", "uxdesign"],
-            description: "ACCTER automates and simplifies all your corporate planning and consolidation processes. Their goal is to transform the traditional consolidation, forecasting and budgeting cycles into value adding business processes and streamline your financial close.",
-            slug: "accter"
-        },
-        {
-            image: Duckaway,
-            title: "DuckAway",
-            tags: ["softwaredevelopment"],
-            description: "DuckAway is a social experiment in which ducks are distributed all over the world. Once a duck is found, it can be passed on and give the duck a nice trip.",
-            slug: "duckaway"
+            description: "Enjoy Jobs helps you to find a job within East- or West-Flanders. Apply online for the available vacancies and upload your personal CV.",
+            slug: "enjoyjobs"
         },
         {
             image: Abloc,
@@ -44,17 +36,17 @@ export default function Work() {
     ];
 
     return (
-        <section className="work my-20" id="work">
+        <section className="work md:my-36 my-20" id="work">
             <div className="container px-6 sm:px-10 md:px-16 lg:mx-auto">
                 <h3 className="title font-medium text-black text-lg" data-aos="fade-right">
                     Some <span className="title-line title-line--v3">work <LineThree /></span>
                 </h3>
 
-                <div className="grid lg:grid-cols-2 grid-cols-1 gap-16 mt-20">
+                <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-16 md:gap-10 gap-8 mt-10">
                         {
                             workContent && workContent.map((item, index) => {
                                 return (
-                                    <div key={index} className="work-item mb-10" data-aos={index % 2 ? "fade-left" : "fade-right"}>
+                                    <div key={index} className={`work-item ${ index === 0 ? 'lg:col-span-6' : 'lg:col-span-3' }`} data-aos="fade-up">
                                         <div className="work-item-img relative w-full">
                                             <Image 
                                                 src={item.image}
@@ -65,7 +57,7 @@ export default function Work() {
                                         </div>
 
                                         <div className="work-item-content mt-7">
-                                            <h4 className="title text-md text-black font-bold">
+                                            <h4 className="title text-md text-black font-semibold">
                                                 {item.title}
                                             </h4>
 

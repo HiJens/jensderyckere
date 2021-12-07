@@ -4,6 +4,7 @@ import Text from "./Text";
 import Quote from "./Quote";
 import Banner from "./Banner";
 import Visit from "./Visit";
+import Video from "./Video";
 
 export {
     Hero,
@@ -11,5 +12,6 @@ export {
     Text,
     Quote,
     Banner,
-    Visit
+    Visit,
+    Video
 };

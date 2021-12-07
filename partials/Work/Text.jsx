@@ -1,7 +1,7 @@
 export default function Text({ title, columns }) {
     return (
         <section className="text">
-            <div className="container py-20 px-6 sm:px-10 md:px-16 lg:mx-auto">
+            <div className="container md:py-20 py-10 px-6 sm:px-10 md:px-16 lg:mx-auto">
                 {
                     title && (
                         <h2 className="text-title text-black font-semibold text-md" data-aos="fade-up">

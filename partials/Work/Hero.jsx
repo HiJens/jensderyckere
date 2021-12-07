@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Hero({ title, image }) {
+export default function Hero({ title, image, position }) {
     return (
         <div className="hero hero--work flex justify-center items-center">
             <div className="hero-title w-full h-full flex justify-center items-center">
@@ -14,7 +14,7 @@ export default function Hero({ title, image }) {
                     src={image}
                     layout="fill"
                     objectFit="cover"
-                    objectPosition="50% 20%"
+                    objectPosition={position ? position : "50% 50%"}
                 />
             </div>
         </div>   
