@@ -7,9 +7,6 @@ import Image from "next/image";
 // Components
 import { LineOne, LineTwo } from "../../components";
 
-// Packages
-import { Parallax } from 'react-parallax';
-
 export default function Hero() {
     return (
         <section className="hero hero--home lg:flex items-center py-20">
@@ -20,7 +17,7 @@ export default function Hero() {
                             Jens Deryckere
                         </span>
 
-                        <h2 className="hero-content-title text-black font-medium text-lg md:text-xl mt-2 mb-6" data-aos="fade-right" data-aos-delay="200">
+                        <h2 className="hero-content-title text-black font-medium text-md md:text-xl mt-2 mb-6" data-aos="fade-right" data-aos-delay="200">
                             I deliver <span className="title-line title-line--v1">user-oriented <LineOne /></span> and <span className="title-line title-line--v2">optimized <LineTwo /></span> digital products
                         </h2>
 

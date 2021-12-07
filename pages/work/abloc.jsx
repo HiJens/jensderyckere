@@ -54,7 +54,7 @@ export default function Abloc() {
             />
 
             <Quote
-                title="It was a pleasure to work with u"
+                title="De kwaliteit die Jens aflevert is is van hoogstaand niveau! Topgast om mee samen te werken!"
                 name="Arnaud Deleu"
             />
 

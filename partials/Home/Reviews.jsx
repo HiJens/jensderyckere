@@ -13,7 +13,7 @@ export default function Reviews() {
     // All content
     const reviewsContent = [
         {
-            quote: "Dit is een test van een zeer goede quote",
+            quote: "De kwaliteit die Jens aflevert is is van hoogstaand niveau! Topgast om mee samen te werken!",
             name: "Arnaud Deleu",
             role: "Founder",
             avatar: Arnaud,
@@ -55,8 +55,8 @@ export default function Reviews() {
                     reviewsContent && reviewsContent.map((item, index) => {
                         return activeIndex === index && (
                             <div key={index} className="reviews-item mb-10 flex flex-col items-center" data-aos="fade-u">
-                                <h2 className="reviews-item-quote text-center text-black text-lg font-medium">
-                                    {item.quote}
+                                <h2 className="reviews-item-quote text-center text-black text-md font-medium max-w-lg">
+                                    "{item.quote}"
                                 </h2>
 
                                 <div className="reviews-item-avatar w-20 h-20 relative overflow-hidden rounded-full flex bg-grey mt-6 mb-4">

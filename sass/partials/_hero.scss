@@ -63,6 +63,18 @@
                 margin: auto;
             }
         }
+
+        &-title {
+
+            .title-line {
+
+                svg {
+                    @media (max-width: 640px) {
+                        bottom: -8px;
+                    }
+                }
+            }
+        }
     }
 
     &-images {
