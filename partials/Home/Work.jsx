@@ -36,7 +36,7 @@ export default function Work() {
     ];
 
     return (
-        <section className="work md:my-36 my-20" id="work">
+        <section className="work md:mb-36 md:mt-36 mb-20" id="work">
             <div className="container px-6 sm:px-10 md:px-16 lg:mx-auto">
                 <h3 className="title font-medium text-black text-lg" data-aos="fade-right">
                     Some <span className="title-line title-line--v3">work <LineThree /></span>
