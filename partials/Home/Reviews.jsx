@@ -13,7 +13,7 @@ export default function Reviews() {
     // All content
     const reviewsContent = [
         {
-            quote: "De kwaliteit die Jens aflevert is is van hoogstaand niveau! Topgast om mee samen te werken!",
+            quote: "The quality that Jens delivers is top notch! Top guy to work with!",
             name: "Arnaud Deleu",
             role: "Founder",
             avatar: Arnaud,
@@ -23,7 +23,7 @@ export default function Reviews() {
             }
         },
         {
-            quote: "Een project in samenwerking met Jens is een project waar je kan rekenen op een vlotte samenwerking en communicatie.",
+            quote: "A project in cooperation with Jens is a project where you can count on smooth cooperation and communication.",
             name: "Hans Vertriest",
             role: "Fullstack Developer",
             avatar: Hans,
