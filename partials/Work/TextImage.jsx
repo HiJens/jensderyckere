@@ -41,7 +41,7 @@ export default function TextImage({ title, text, image, buttons }) {
                                         buttons.map((btn, i) => {
                                             return (
                                                 <Link key={i} href={btn.url} passHref>
-                                                    <a className={`button button-${btn.style} text-sm mr-2`} data-aos="fade-left">
+                                                    <a className={`button button-${btn.style} text-sm mr-2 md:w-auto w-full mb-2 md:mb-0`} data-aos="fade-left">
                                                         <span>{btn.text}</span>
                                                     </a>
                                                 </Link>
