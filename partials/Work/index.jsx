@@ -5,6 +5,7 @@ import Quote from "./Quote";
 import Banner from "./Banner";
 import Visit from "./Visit";
 import Video from "./Video";
+import TextImage from "./TextImage";
 
 export {
     Hero,
@@ -13,5 +14,6 @@ export {
     Quote,
     Banner,
     Visit,
-    Video
+    Video,
+    TextImage
 };
