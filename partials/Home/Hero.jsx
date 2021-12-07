@@ -9,7 +9,7 @@ import { LineOne, LineTwo } from "../../components";
 
 export default function Hero() {
     return (
-        <section className="hero hero--home lg:flex items-center py-20">
+        <section className="hero hero--home lg:flex items-center pb-20 pt-5 sm:py-20">
             <div className="container px-6 sm:px-10 md:px-16 lg:mx-auto">
                 <div className="grid lg:grid-cols-2 grid-cols-1">
                     <div className="hero-content md:pr-32">
