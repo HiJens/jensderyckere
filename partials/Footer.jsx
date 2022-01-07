@@ -59,7 +59,7 @@ export default function Footer() {
                                 </h6>
 
                                 <div className="footer-nav-split md:flex mt-4">
-                                    <div className="footer-nav-split-item">
+                                    <div className="footer-nav-split-item mr-6">
                                         <Link href="/work/routez" passHref>
                                             <a className="flex mb-2 text-black font-medium text-sm hover:underline">RouteZ</a>
                                         </Link>
@@ -69,6 +69,16 @@ export default function Footer() {
                                         <Link href="/work/enjoyjobs" passHref>
                                             <a className="text-black font-medium text-sm hover:underline">Enjoy Jobs</a>
                                         </Link>
+                                    </div>
+
+                                    <div className="footer-nav-split-item">
+                                        <Link href="/work/accter" passHref>
+                                            <a className="flex mb-2 text-black font-medium text-sm hover:underline">Accter</a>
+                                        </Link>
+                                        <Link href="/work/duckaway" passHref>
+                                            <a className="flex mb-2 text-black font-medium text-sm hover:underline">DuckAway</a>
+                                        </Link>
+
                                     </div>
                                 </div>
                             </div>
